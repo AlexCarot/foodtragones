@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!-- T02: estructura basica de una pagina HTML5 -->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FoodTragones: food truck de comida rápida en San Miguel. Hamburguesas, pollo deshilachado, chorizos, salchipapas, supremas, filetes, enchiladas y broaster.">
+  <title>Inicio | FoodTragones</title>
+  <!-- T01: CSS externo. -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/food-logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <!-- T05 y T07: encabezado y menu comunes; sticky en style.css -->
+  <header class="cabecera">
+    <div class="contenedor nav-barra">
+      <a class="logo" href="index.html" aria-label="FoodTragones, ir al inicio">
+        <img class="logo-negocio" src="img/food-logo.jpg" alt="Logo de FoodTragones con una hamburguesa" width="500"
+          height="500">
+        <span>FoodTragones<small>Food truck · San Miguel</small></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <!-- T06: tres imagenes animadas; texto siempre visible -->
+    <section class="hero" aria-labelledby="titulo-inicio">
+      <div class="slider">
+        <input class="pausa-slider" type="checkbox" id="pausar-slider">
+        <label class="pausa-label" for="pausar-slider">Pausar imágenes</label>
+        <img class="slide slide-1" src="img/hero-1.jpg"
+          alt="Food truck de FoodTragones iluminado durante la atención nocturna" width="1600" height="720">
+        <!-- <img class="slide slide-2" src="img/hero-2.jpg" alt="Hamburguesa de FoodTragones con queso, huevo y verduras" width="768" height="970"> -->
+        <img class="slide slide-2" src="img/hero-5.jpg" alt="Hamburguesa de FoodTragones con queso, huevo y verduras"
+          width="768" height="970">
+        <img class="slide slide-3" src="img/hero-4.jpg" alt="Salchipapas de FoodTragones con cremas y salsas"
+          width="832" height="574">
+        <!-- <img class="slide slide-3" src="img/hero-3.jpg" alt="Salchipapas de FoodTragones con cremas y salsas" width="832" height="574"> -->
+        <div class="contenedor hero-contenido">
+          <span class="ceja">Food truck · San Miguel, Perú</span>
+          <h1 id="titulo-inicio">Aquí se viene<br>a comer <span>sin miedo.</span></h1>
+          <p>Hamburguesas, salchipapas, enchiladas y pollo broaster. En FoodTragones, el antojo se sirve sobre ruedas.
+          </p>
+          <a class="btn" href="#carta">Ver la carta completa <i class="fa-solid fa-arrow-right"
+              aria-hidden="true"></i></a>
+          <div class="hero-pie">
+            <div class="indicadores" aria-hidden="true"><span></span><span></span><span></span></div><span>Tres antojos.
+              Un mismo punto de encuentro.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="franja">
+      <div class="contenedor franja-contenido">
+        <p><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Preparado al momento</p>
+        <p><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Porciones para compartir</p>
+        <p><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sabor sobre ruedas</p>
+      </div>
+    </div>
+
+    <!-- T03: parrafos, span destacado e imagen con alt. T06: filtros reales. -->
+    <section class="seccion" aria-labelledby="presentacion">
+      <div class="contenedor dos-col">
+        <div>
+          <span class="ceja">01 / El food truck</span>
+          <h2 id="presentacion">Buen diente.<br>Mejor compañía.</h2>
+          <p>En FoodTragones creemos que un buen antojo se disfruta en buena compañía. Somos un food truck de comida
+            rápida con una carta para distintos antojos: hamburguesas, salchipapas, enchiladas, pollo y más.</p>
+          <p>Combinamos <span class="destacado">sabor, buena porción y atención cercana</span> para que cada visita
+            termine con un «¡yo vuelvo!».</p>
+          <a class="enlace" href="nosotros.html">Nuestra historia <i class="fa-solid fa-arrow-right"
+              aria-hidden="true"></i></a>
+        </div>
+        <figure class="marco-imagen">
+          <img class="img-filtro" tabindex="0" src="img/nosotros.jpg"
+            alt="Food truck de FoodTragones estacionado e iluminado de noche" width="1600" height="1201" loading="lazy">
+          <figcaption>Frente a Metro de La Marina, San Miguel, Lima.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- T04: tarjetas con bordes, sombras e iconos. T06: hover y transform. -->
+    <section class="seccion fondo-suave" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="contenedor">
+        <div class="titulo-fila">
+          <div><span class="ceja">02 / Nuestros destacados</span>
+            <h2 id="titulo-servicios">Elige tu próximo antojo.</h2>
+          </div><a class="enlace" href="contacto.html">Encuentra el food truck <i class="fa-solid fa-arrow-right"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <span class="numero">01</span>
+            <div class="icono"><i class="fa-solid" aria-hidden="true">&#xf805;</i></div>
+            <h3>Hamburguesas</h3>
+            <p>Clásica, Cheese, Bacon, Royal y más opciones de nuestra carta.</p>
+            <a class="enlace" href="#carta-hamburguesas">Ver hamburguesas <i class="fa-solid fa-arrow-right"
+                aria-hidden="true"></i></a>
+          </article>
+          <article class="tarjeta">
+            <span class="numero">02</span>
+            <div class="icono"><i class="fa-solid" aria-hidden="true">&#xf2e7;</i></div>
+            <h3>Salchipapas</h3>
+            <p>Clásica, Especial, Royal, Salchipollo y Salchi Tragona, con sus acompañamientos.</p>
+            <a class="enlace" href="#carta-salchipapas">Ver salchipapas <i class="fa-solid fa-arrow-right"
+                aria-hidden="true"></i></a>
+          </article>
+          <article class="tarjeta">
+            <span class="numero">03</span>
+            <div class="icono"><i class="fa-solid" aria-hidden="true">&#xf6d7;</i></div>
+            <h3>Pollo broaster</h3>
+            <p>Alita, pecho, pierna o muslo. También a lo Mostrito, con arroz chaufa.</p>
+            <a class="enlace" href="#carta-broaster">Ver el broaster <i class="fa-solid fa-arrow-right"
+                aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carta completa: contenido del negocio, organizado sin JavaScript. -->
+    <section class="seccion" id="carta" aria-labelledby="titulo-carta">
+      <div class="contenedor">
+        <span class="ceja">03 / Nuestra carta</span>
+        <h2 id="titulo-carta">La carta de FoodTragones.</h2>
+        <p class="bajada">Hamburguesas, pollo, chorizos, salchipapas y más. Encuentra tu próximo antojo por categoría.
+        </p>
+        <ul class="carta-indice" aria-label="Accesos a las categorías de la carta">
+          <li><a href="#carta-hamburguesas">Hamburguesas</a></li>
+          <li><a href="#carta-deshilachado">Pollo Deshilachado</a></li>
+          <li><a href="#carta-chorizos">Chorizos</a></li>
+          <li><a href="#carta-salchipapas">Salchipapas</a></li>
+          <li><a href="#carta-supremas">Supremas</a></li>
+          <li><a href="#carta-filete-pollo">Filete de Pollo</a></li>
+          <li><a href="#carta-enchiladas">Enchiladas</a></li>
+          <li><a href="#carta-broaster">Pollo Broaster</a></li>
+          <li><a href="#carta-extras">Extras</a></li>
+          <li><a href="#carta-bebidas">Bebidas</a></li>
+        </ul>
+        <div class="carta-grid">
+          <article class="tarjeta carta-categoria" id="carta-hamburguesas" aria-labelledby="titulo-carta-hamburguesas">
+            <img class="carta-foto" src="img/hamburguesa-carne.jpg"
+              alt="Hamburguesa de carne de FoodTragones con papas y cremas" width="768" height="961" loading="lazy">
+            <h3 id="titulo-carta-hamburguesas">Hamburguesas</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Hamburguesa Clásica</h4>
+                <p><strong>Ingredientes:</strong> Carne.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa Cheese</h4>
+                <p><strong>Ingredientes:</strong> Carne, queso.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa Bacon</h4>
+                <p><strong>Ingredientes:</strong> Carne, queso, tocino.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa Royal</h4>
+                <p><strong>Ingredientes:</strong> Carne, queso, huevo, jamón.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa a lo Pobre</h4>
+                <p><strong>Ingredientes:</strong> Carne, plátano, huevo.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa Hawaiana</h4>
+                <p><strong>Ingredientes:</strong> Carne, piña, queso.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa con Todo</h4>
+                <p><strong>Ingredientes:</strong> Carne, queso, huevo, jamón, tocino.</p>
+              </li>
+              <li>
+                <h4>Hamburguesa Especial</h4>
+                <p><strong>Ingredientes:</strong> Carne, chorizo, queso, huevo.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas o al hilo, ensalada y cremas.
+            </p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-deshilachado" aria-labelledby="titulo-carta-deshilachado">
+            <img class="carta-foto" src="img/hamburguesa.jpg"
+              alt="Sándwich de FoodTragones servido en un plato con cremas" width="720" height="540" loading="lazy">
+            <h3 id="titulo-carta-deshilachado">Pollo Deshilachado</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Deshilachado Clásica</h4>
+                <p><strong>Ingredientes:</strong> Pollo.</p>
+              </li>
+              <li>
+                <h4>Deshilachado Cheese</h4>
+                <p><strong>Ingredientes:</strong> Pollo, queso.</p>
+              </li>
+              <li>
+                <h4>Deshilachado Bacon</h4>
+                <p><strong>Ingredientes:</strong> Pollo, queso, tocino.</p>
+              </li>
+              <li>
+                <h4>Deshilachado Royal</h4>
+                <p><strong>Ingredientes:</strong> Pollo, queso, huevo, jamón.</p>
+              </li>
+              <li>
+                <h4>Deshilachado a lo Pobre</h4>
+                <p><strong>Ingredientes:</strong> Pollo, plátano, huevo.</p>
+              </li>
+              <li>
+                <h4>Deshilachado Hawaiana</h4>
+                <p><strong>Ingredientes:</strong> Pollo, piña, queso.</p>
+              </li>
+              <li>
+                <h4>Deshilachado con Todo</h4>
+                <p><strong>Ingredientes:</strong> Pollo, queso, huevo, jamón, tocino.</p>
+              </li>
+              <li>
+                <h4>Deshilachado Especial</h4>
+                <p><strong>Ingredientes:</strong> Pollo, chorizo, queso, huevo.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas o al hilo, ensalada y cremas.
+            </p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-chorizos" aria-labelledby="titulo-carta-chorizos">
+            <img class="carta-foto" src="img/plancha.jpg"
+              alt="Preparación de carnes, salchichas y huevos en la plancha de FoodTragones" width="768" height="965"
+              loading="lazy">
+            <h3 id="titulo-carta-chorizos">Chorizos</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Chorizo Clásica</h4>
+                <p><strong>Ingredientes:</strong> Chorizo.</p>
+              </li>
+              <li>
+                <h4>Chorizo Cheese</h4>
+                <p><strong>Ingredientes:</strong> Chorizo, queso.</p>
+              </li>
+              <li>
+                <h4>Chorizo Bacon</h4>
+                <p><strong>Ingredientes:</strong> Chorizo, queso, tocino.</p>
+              </li>
+              <li>
+                <h4>Chorizo Royal</h4>
+                <p><strong>Ingredientes:</strong> Chorizo, queso, huevo, jamón.</p>
+              </li>
+              <li>
+                <h4>Chorizo a lo Pobre</h4>
+                <p><strong>Ingredientes:</strong> Chorizo, plátano, huevo.</p>
+              </li>
+              <li>
+                <h4>Chorizo Hawaiano</h4>
+                <p><strong>Ingredientes:</strong> Chorizo, piña, queso.</p>
+              </li>
+              <li>
+                <h4>Chorizo con Todo</h4>
+                <p><strong>Ingredientes:</strong> Chorizo, queso, huevo, jamón, tocino.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas o al hilo, ensalada y cremas.
+            </p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-salchipapas" aria-labelledby="titulo-carta-salchipapas">
+            <div class="carta-dos-fotos">
+              <img class="carta-foto" src="img/salchipapa.jpg"
+                alt="Porciones de salchipapas de FoodTragones con cremas y salsas" width="832" height="574"
+                loading="lazy">
+              <img class="carta-foto" src="img/salchipollo.jpg"
+                alt="Porción de salchipollo de FoodTragones con papas y cremas" width="720" height="942" loading="lazy">
+            </div>
+            <h3 id="titulo-carta-salchipapas">Salchipapas</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Salchipapa Clásica</h4>
+                <p><strong>Ingredientes:</strong> Hot dog.</p>
+              </li>
+              <li>
+                <h4>Salchipapa Especial</h4>
+                <p><strong>Ingredientes:</strong> Hot dog, queso, huevo.</p>
+              </li>
+              <li>
+                <h4>Salchipapa Royal</h4>
+                <p><strong>Ingredientes:</strong> Hot dog, queso, huevo, jamón.</p>
+              </li>
+              <li>
+                <h4>Salchipapa a lo Pobre</h4>
+                <p><strong>Ingredientes:</strong> Hot dog, plátano, huevo.</p>
+              </li>
+              <li>
+                <h4>Salchipapa con Todo</h4>
+                <p><strong>Ingredientes:</strong> Hot dog, queso, huevo, jamón, tocino.</p>
+              </li>
+              <li>
+                <h4>Salchipollo</h4>
+                <p><strong>Ingredientes:</strong> Hot dog, pollo deshilachado.</p>
+              </li>
+              <li>
+                <h4>Salchi Tragona</h4>
+                <p><strong>Ingredientes:</strong> Hot dog, chorizo, 2 huevos.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas, ensalada y cremas.</p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-supremas" aria-labelledby="titulo-carta-supremas">
+            <img class="carta-foto" src="img/broaster.jpg"
+              alt="Preparación de FoodTragones con pollo crocante, papas y cremas" width="768" height="971"
+              loading="lazy">
+            <h3 id="titulo-carta-supremas">Supremas</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Suprema Clásica</h4>
+                <p><strong>Ingredientes:</strong> Suprema.</p>
+              </li>
+              <li>
+                <h4>Suprema Cheese</h4>
+                <p><strong>Ingredientes:</strong> Suprema, queso.</p>
+              </li>
+              <li>
+                <h4>Suprema Bacon</h4>
+                <p><strong>Ingredientes:</strong> Suprema, queso, tocino.</p>
+              </li>
+              <li>
+                <h4>Suprema Royal</h4>
+                <p><strong>Ingredientes:</strong> Suprema, queso, huevo, jamón.</p>
+              </li>
+              <li>
+                <h4>Suprema a lo Pobre</h4>
+                <p><strong>Ingredientes:</strong> Suprema, plátano, huevo.</p>
+              </li>
+              <li>
+                <h4>Suprema Hawaiana</h4>
+                <p><strong>Ingredientes:</strong> Suprema, piña, queso.</p>
+              </li>
+              <li>
+                <h4>Suprema con Todo</h4>
+                <p><strong>Ingredientes:</strong> Suprema, queso, huevo, jamón, tocino.</p>
+              </li>
+              <li>
+                <h4>Suprema Especial</h4>
+                <p><strong>Ingredientes:</strong> Suprema, chorizo, queso, huevo.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas o al hilo, ensalada y cremas.
+            </p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-filete-pollo" aria-labelledby="titulo-carta-filete-pollo">
+            <img class="carta-foto" src="img/plancha.jpg" alt="Ingredientes de FoodTragones preparándose en la plancha"
+              width="768" height="965" loading="lazy">
+            <h3 id="titulo-carta-filete-pollo">Filete de Pollo</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Filete de Pollo Clásico</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo Cheese</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, queso.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo Bacon</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, queso, tocino.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo Royal</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, queso, huevo, jamón.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo a lo Pobre</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, plátano, huevo.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo Hawaiano</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, piña, queso.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo con Todo</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, queso, huevo, jamón, tocino.</p>
+              </li>
+              <li>
+                <h4>Filete de Pollo Especial</h4>
+                <p><strong>Ingredientes:</strong> Filete de pollo, chorizo, queso, huevo.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas o al hilo, ensalada y cremas.
+            </p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-enchiladas" aria-labelledby="titulo-carta-enchiladas">
+            <img class="carta-foto" src="img/enchilada.jpg"
+              alt="Imagen de una enchilada con relleno, verduras y crema proporcionada para FoodTragones" width="626"
+              height="417" loading="lazy">
+            <h3 id="titulo-carta-enchiladas">Enchiladas</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Enchilada Clásica</h4>
+                <p><strong>Ingredientes:</strong> Queso, pollo deshilachado o carne.</p>
+              </li>
+              <li>
+                <h4>Enchilada Especial</h4>
+                <p><strong>Ingredientes:</strong> Queso, chorizo, pollo o carne.</p>
+              </li>
+              <li>
+                <h4>Enchilada Hawaiana</h4>
+                <p><strong>Ingredientes:</strong> Queso, piña, pollo o carne.</p>
+              </li>
+              <li>
+                <h4>Enchilada Americana</h4>
+                <p><strong>Ingredientes:</strong> Queso, huevo, hot dog, tocino.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas o al hilo, ensalada y cremas.
+            </p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-broaster" aria-labelledby="titulo-carta-broaster">
+            <img class="carta-foto" src="img/mostrito.jpg" alt="Mostrito con pollo, arroz chaufa y papas fritas"
+              width="2048" height="1365" loading="lazy">
+            <h3 id="titulo-carta-broaster">Pollo Broaster</h3>
+            <ul class="carta-productos">
+              <li>
+                <h4>Pollo Broaster (Alita)</h4>
+                <p><strong>Presa:</strong> Alita.</p>
+              </li>
+              <li>
+                <h4>Pollo Broaster (Pecho)</h4>
+                <p><strong>Presa:</strong> Pecho.</p>
+              </li>
+              <li>
+                <h4>Pollo Broaster (Pierna)</h4>
+                <p><strong>Presa:</strong> Pierna.</p>
+              </li>
+              <li>
+                <h4>Pollo Broaster (Muslo)</h4>
+                <p><strong>Presa:</strong> Muslo.</p>
+              </li>
+              <li>
+                <h4>Pollo Broaster a lo Mostrito</h4>
+                <p><strong>Presa a elección:</strong> Muslo, pierna, pecho o alita.</p>
+                <p>Incluye arroz chaufa.</p>
+              </li>
+            </ul>
+            <p class="carta-acompanamiento"><strong>Acompañamiento:</strong> Papas fritas, ensalada y cremas.</p>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-extras" aria-labelledby="titulo-carta-extras">
+            <h3 id="titulo-carta-extras">Extras</h3>
+            <ul class="carta-opciones">
+              <li>Pollo deshilachado</li>
+              <li>Carne</li>
+              <li>Chorizo</li>
+              <li>Piña</li>
+              <li>Hot dog</li>
+              <li>Tocino</li>
+              <li>Huevo</li>
+              <li>Queso</li>
+              <li>Plátano</li>
+              <li>Jamón</li>
+            </ul>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+          <article class="tarjeta carta-categoria" id="carta-bebidas" aria-labelledby="titulo-carta-bebidas">
+            <h3 id="titulo-carta-bebidas">Bebidas</h3>
+            <ul class="carta-opciones">
+              <li>Coca-Cola</li>
+              <li>Inca Kola</li>
+              <li>Café</li>
+              <li>Infusiones</li>
+            </ul>
+            <a class="carta-volver" href="#titulo-carta">Volver a las categorías</a>
+          </article>
+        </div>
+        <details class="carta-original">
+          <summary>Ver las imágenes de referencia de la carta</summary>
+          <div class="dos-col">
+            <img class="carta-referencia" src="img/carta-hamburguesas-pollo.jpg"
+              alt="Carta original de hamburguesas y pollo deshilachado de FoodTragones" width="632" height="537"
+              loading="lazy">
+            <img class="carta-referencia" src="img/carta-supremas-filetes.jpg"
+              alt="Carta original de supremas y filetes de pollo de FoodTragones" width="618" height="352"
+              loading="lazy">
+            <img class="carta-referencia" src="img/carta-Chorizo-Salchipapa.jpg"
+              alt="Carta original de chorizo y salchipapa de FoodTragones" width="618" height="352" loading="lazy">
+            <img class="carta-referencia" src="img/carta-Enchilada-Broaester-Extras-Bebidas.jpg"
+              alt="Carta original de chorizo y salchipapa de FoodTragones" width="618" height="352" loading="lazy">
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- T05: lista ordenada. T07: aside con informacion complementaria. -->
+    <section class="seccion fondo-verde" aria-labelledby="como-trabajamos">
+      <div class="contenedor dos-col">
+        <div><span class="ceja">04 / Paso a paso</span>
+          <h2 id="como-trabajamos">De la plancha<br>a tus manos.</h2>
+          <ol class="pasos">
+            <li><strong>Elige tu antojo.</strong>Revisa las categorías y los ingredientes de nuestra carta.</li>
+            <li><strong>Pide en el food truck.</strong>Cuéntanos qué te provoca y cómo lo prefieres.</li>
+            <li><strong>Lo preparamos al momento.</strong>Pasamos tu hamburguesa por la plancha y dejamos tus papas
+              crocantes.</li>
+            <li><strong>Recoge y disfruta.</strong>Te entregamos tu pedido listo para comer o compartir.</li>
+          </ol>
+        </div>
+        <aside class="nota">
+          <h3>Para los más tragones</h3>
+          <p>Arma tu antojo con las opciones de nuestra carta:</p>
+          <ul>
+            <li>Hamburguesas con queso y salsas.</li>
+            <li>Papas y salchipapas para compartir.</li>
+            <li>Extras y bebidas para completar tu elección.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="contenedor llamada" aria-labelledby="idea">
+      <h2 id="idea">El hambre ya tiene parada.</h2><a class="btn btn-oscuro" href="contacto.html">Dónde encontrarnos <i
+          class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
+  </main>
+  <!-- T05 y T07: pie identico con enlaces rapidos y redes de ejemplo -->
+  <footer class="pie">
+    <div class="contenedor footer-grid">
+      <div>
+        <h3 class="marca-footer"><img class="logo-pie" src="img/food-logo.jpg" alt="Logo de FoodTragones" width="500"
+            height="500">FoodTragones</h3>
+        <p>Buen diente. Buena compañía.<br>Hamburguesas, salchipapas y broaster sobre ruedas.</p>
+      </div>
+      <div>
+        <h3>Explora el sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="nosotros.html#position">Position en acción</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ven por tu antojo</h3>
+        <p>Av. del Sabor 123, Lima<br>000 000 000 · hola@foodtragones.example<br>Datos ficticios para esta práctica.</p>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-facebook-f"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-instagram"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-linkedin-in"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-youtube"
+                aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 FoodTragones · Comida rápida sobre ruedas · Todos los derechos reservados</p>
+  </footer>
+  <!-- T06: fixed permanece visible al desplazarse; enlace local de demostracion -->
+  <a class="flotante" href="contacto.html#whatsapp" aria-label="WhatsApp de ejemplo: leer el aviso de contacto"><i
+      class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp · demo</span></a>
+</body>
+
+</html>

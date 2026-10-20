@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- T02: estructura basica de una pagina HTML5 -->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FoodTragones: food truck de comida rápida en Lima. Hamburguesas, pollo deshilachado, chorizos, salchipapas, supremas, filetes, enchiladas y broaster.">
+  <title>Nosotros | FoodTragones</title>
+  <!-- T01: CSS externo. T04: iconos Font Awesome guardados localmente. -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/food-logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <!-- T05 y T07: encabezado y menu comunes; sticky en style.css -->
+  <header class="cabecera">
+    <div class="contenedor nav-barra">
+      <a class="logo" href="index.html" aria-label="FoodTragones, ir al inicio">
+        <img class="logo-negocio" src="img/food-logo.jpg" alt="Logo de FoodTragones con una hamburguesa" width="500"
+          height="500">
+        <span>FoodTragones<small>Food truck · San Miguel</small></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html" class="activo" aria-current="page">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero-pagina hero-nosotros" aria-labelledby="titulo-nosotros">
+      <div class="contenedor"><span class="ceja">La gente detrás del sabor</span>
+        <h1 id="titulo-nosotros">Un food truck pequeño.<br>Un antojo bien grande.</h1>
+        <p>Nos mueve el gusto por cocinar rico y reunir a las personas alrededor de una buena hamburguesa.</p>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="historia">
+      <div class="contenedor">
+        <div class="dos-col">
+          <article><span class="ceja">01 / Nuestra historia</span>
+            <h2 id="historia">Todo empezó<br>con hambre y una idea.</h2>
+            <p>FoodTragones es un food truck de comida rápida. Nuestra carta reúne hamburguesas, pollo deshilachado,
+              chorizos, salchipapas, supremas, filetes de pollo, enchiladas y broaster.</p>
+            <p>Nos gusta que cada pedido tenga algo en común: <span class="destacado">cocinar rico, servir bien y
+                compartir</span>.</p>
+            <p>Las fotografías muestran nuestro food truck, los productos y parte de su preparación.</p>
+          </article>
+          <figure class="marco-imagen"><img class="img-filtro" tabindex="0" src="img/historia.jpg"
+              alt="Interior iluminado del food truck de FoodTragones durante la atención" width="2048" height="921"
+              loading="lazy">
+            <figcaption>Hecho con amor ❤️, servido con cariño.</figcaption>
+          </figure>
+        </div>
+        <div class="dos-col metodo" id="metodo">
+          <figure class="marco-imagen"><img class="img-blur" tabindex="0" src="img/otras-imagenes.jpg"
+              alt="Carnes, salchichas y huevos preparándose en la plancha de FoodTragones" width="768" height="965"
+              loading="lazy">
+            <figcaption>Asi Comienza el Verdadero Sabor</figcaption>
+          </figure>
+          <article><span class="ceja">Así lo preparamos</span>
+            <h3>Primero la plancha, después el primer mordisco.</h3>
+            <p>Organizamos los ingredientes, preparamos cada pedido al momento y revisamos que llegue completo. La idea
+              es sencilla: que disfrutes desde el primer mordisco.</p><a class="enlace" href="contacto.html#video">Ver
+              nuestro video <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+        <div class="mision-vision">
+          <article class="tarjeta">
+            <div class="icono"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+            <h3>Misión</h3>
+            <p>Preparar comida rápida con buen sabor y porciones generosas, para compartir un momento agradable
+              alrededor de nuestro food truck.</p>
+          </article>
+          <article class="tarjeta">
+            <div class="icono"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
+            <h3>Visión</h3>
+            <p>Ser un food truck reconocido en Lima por sus hamburguesas, su buena atención y las ganas de volver por
+              otro antojo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- T05: lista desordenada con cuatro valores. -->
+    <section class="seccion fondo-suave" aria-labelledby="valores">
+      <div class="contenedor dos-col">
+        <div><span class="ceja">02 / Lo que nos guía</span>
+          <h2 id="valores">El buen sabor empieza<br>por cómo trabajamos.</h2>
+          <p>Estos valores acompañan cada pedido que preparamos.</p>
+        </div>
+        <ul class="valores">
+          <li><strong>Sabor.</strong><br>Cuidamos las recetas y cada preparación.</li>
+          <li><strong>Higiene.</strong><br>Mantenemos limpios el espacio y los utensilios.</li>
+          <li><strong>Honestidad.</strong><br>Mostramos con claridad las opciones y sus precios.</li>
+          <li><strong>Buena onda.</strong><br>Atendemos con respeto y una sonrisa.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- T03: fotografias locales con alt. T07: section y article. -->
+    <section class="seccion" aria-labelledby="equipo">
+      <div class="contenedor"><span class="ceja">03 / Nuestro equipo</span>
+        <h2 id="equipo">El trabajo detrás de cada antojo.</h2>
+        <p class="bajada">Cocina, preparación y atención: cada parte acompaña el recorrido de tu pedido.</p>
+        <div class="tarjetas equipo">
+          <article class="tarjeta"><img class="foto" src="img/equipo-camila.jpg"
+              alt="Ingredientes y huevos sobre la plancha del food truck" width="768" height="965" loading="lazy">
+            <h3>En la cocina</h3><span class="rol">Cocina y preparación</span>
+            <p>Organiza los ingredientes y cuida las recetas de nuestras preparaciones.</p>
+          </article>
+          <article class="tarjeta"><img class="foto" src="img/equipo-diego.jpg"
+              alt="Mini hamburguesas de FoodTragones alineadas para servir" width="2048" height="921" loading="lazy">
+            <h3>En la preparación</h3><span class="rol">Plancha y montaje</span>
+            <p>Prepara las hamburguesas y reúne cada pedido con sus acompañamientos.</p>
+          </article>
+          <article class="tarjeta"><img class="foto" src="img/equipo-lucia.jpg"
+              alt="Empaques de FoodTragones preparados para entregar los pedidos" width="1599" height="1599"
+              loading="lazy">
+            <h3>En la atención</h3><span class="rol">Atención y pedidos</span>
+            <p>Recibe los pedidos y se asegura de que cada persona se lleve lo que pidió.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- T05 y T07: pie identico con enlaces rapidos y redes de ejemplo -->
+  <footer class="pie">
+    <div class="contenedor footer-grid">
+      <div>
+        <h3 class="marca-footer"><img class="logo-pie" src="img/food-logo.jpg" alt="Logo de FoodTragones" width="500"
+            height="500">FoodTragones</h3>
+        <p>Buen diente. Buena compañía.<br>Hamburguesas, salchipapas y broaster sobre ruedas.</p>
+        <p>Desarrollado por Alexander Cardenas.</p>
+      </div>
+      <div>
+        <h3>Explora el sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ven por tu antojo</h3>
+        <p>C. Teniente Cesar Lopez Rojas 115, Sa Miguel - Lima<br>987 676 192 · hola@foodtragones.example</p>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-facebook-f"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-instagram"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-linkedin-in"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-youtube"
+                aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 FoodTragones · Comida rápida sobre ruedas . Todos los derechos reservados</p>
+  </footer>
+  <!-- T06: fixed permanece visible al desplazarse; enlace local de demostracion -->
+  <a class="flotante" href="contacto.html#whatsapp" aria-label="WhatsApp de ejemplo: leer el aviso de contacto"><i
+      class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
+</body>
+
+</html>

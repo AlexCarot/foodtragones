@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>foodTragones: comida sobre ruedas</title>
+  <rect width="64" height="64" rx="12" fill="#0b393b"/>
+  <path d="M7 24h34l14 12v13H7Z" fill="#f2bd42"/>
+  <rect x="12" y="28" width="23" height="13" rx="2" fill="#0b393b"/>
+  <path d="M43 30v10h10Z" fill="#edf2ed"/>
+  <path d="M10 24V19h29v5" fill="#fff"/>
+  <circle cx="18" cy="49" r="7" fill="#243b3d"/><circle cx="46" cy="49" r="7" fill="#243b3d"/>
+  <circle cx="18" cy="49" r="3" fill="#fff"/><circle cx="46" cy="49" r="3" fill="#fff"/>
+  <path d="M17 34h14M17 37h14" stroke="#f2bd42" stroke-width="2"/>
+</svg>

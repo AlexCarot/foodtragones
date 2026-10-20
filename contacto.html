@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- T02: estructura basica de una pagina HTML5 -->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FoodTragones: food truck de comida rápida en Lima. Hamburguesas, pollo deshilachado, chorizos, salchipapas, supremas, filetes, enchiladas y broaster.">
+  <title>Contacto | FoodTragones</title>
+  <!-- T01: CSS externo. T04: iconos Font Awesome guardados localmente. -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/food-logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <!-- T05 y T07: encabezado y menu comunes; sticky en style.css -->
+  <header class="cabecera">
+    <div class="contenedor nav-barra">
+      <a class="logo" href="index.html" aria-label="FoodTragones, ir al inicio">
+        <img class="logo-negocio" src="img/food-logo.jpg" alt="Logo de FoodTragones con una hamburguesa" width="500"
+          height="500">
+        <span>FoodTragones<small>Food truck · San Miguel</small></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero-pagina hero-contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor"><span class="ceja">El antojo empieza con un hola</span>
+        <h1 id="titulo-contacto">Tu próxima parada: FoodTragones.</h1>
+        <p>Encuentra nuestros canales de ejemplo y consulta por la carta del food truck. El formulario es de práctica y
+          no envía pedidos.</p>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="datos-contacto">
+      <div class="contenedor"><span class="ceja">01 / Encuéntranos</span>
+        <h2 id="datos-contacto">Ven con hambre. Nosotros ponemos el sabor.</h2>
+        <p class="bajada">Estos datos de contacto se mantienen como ejemplos académicos hasta completar los del negocio.
+        </p>
+        <div class="info-contacto">
+          <article><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <h3>Dirección</h3>
+            <p>C. Teniente Cesar Lopez Rojas 115<br>Sa Miguel, Lima</p>
+          </article>
+          <article><i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <h3>Teléfono</h3>
+            <p>987 676 192<br>Número para pedidos</p>
+          </article>
+          <article><i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <h3>Correo</h3>
+            <p>hola@foodtragones.example<br>Dirección de demostración</p>
+          </article>
+          <article><i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <h3>Horario</h3>
+            <p>Lunes a domingo<br>6:00 p. m. a 2:00 a. m.</p>
+          </article>
+        </div>
+        <div class="contacto-grid">
+          <div id="formulario">
+            <h3>Consulta por la carta · formulario de práctica</h3>
+            <!-- Sin action, servidor ni boton submit. Los campos no se envian. -->
+            <form aria-label="Formulario de contacto demostrativo" aria-describedby="aviso-form">
+              <p class="aviso-form" id="aviso-form">Solo demostración. Puedes escribir y limpiar los campos; no se envía
+                información ni se registran pedidos.</p>
+              <div class="campo"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre"
+                  placeholder="Ejemplo: Alex" autocomplete="off" maxlength="80"></div>
+              <div class="campo"><label for="correo">Correo electrónico</label><input type="email" id="correo"
+                  name="correo" placeholder="nombre@ejemplo.com" autocomplete="off" maxlength="120"></div>
+              <div class="campo"><label for="asunto">Asunto</label><input type="text" id="asunto" name="asunto"
+                  placeholder="Ejemplo: consulta por una hamburguesa" maxlength="100"></div>
+              <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5"
+                  placeholder="Escribe una consulta de ejemplo sobre nuestra carta." maxlength="1000"></textarea></div>
+              <button class="btn btn-oscuro" type="reset">Limpiar campos</button>
+            </form>
+          </div>
+          <div class="contacto-aside">
+            <aside class="nota">
+              <h3>Antes de escribir</h3>
+              <p>Puedes practicar una consulta sobre hamburguesas, broaster, horarios o la presencia del food truck en
+                un evento.</p>
+              <p>Déjanos tu consulta en el formulario y nuestro equipo se pondrá en contacto contigo lo antes posible...
+              </p>
+            </aside>
+            <aside class="nota" id="whatsapp">
+              <h3><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</h3>
+              <p>Próximamente estará disponible nuestro canal de atención por WhatsApp.</p>
+              <p>Contáctanos por WhatsApp, consulta nuestra carta, conoce nuestras promociones y realiza tu pedido de
+                manera rápida y sencilla.</p>
+            </aside>
+            <aside class="nota">
+              <h3>También en redes</h3>
+              <p>Nuestras redes soci ales serán vinculadas en una próxima actualización.</p>
+              <ul class="redes">
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-facebook-f"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-instagram"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-linkedin-in"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="YouTube (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-youtube"
+                      aria-hidden="true"></i></a></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion fondo-suave" aria-labelledby="ubicacion">
+      <div class="contenedor"><span class="ceja">02 / Una referencia en San Miguel</span>
+        <h2 id="ubicacion">Ubicación de FoodTragones.</h2>
+        <p class="bajada"> Encuéntranos en la Av. La Marina, frente a Metro de La Marina, al Costado de la Iglesia
+          Alianza Cristiana en San Miguel. </p>
+        <div class="mapa-caja"><iframe title="Mapa de ejemplo: Plaza Mayor de Lima" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.530981873722!2d-77.08958766385012!3d-12.075757862191777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c994c1db1b89%3A0x79d2d9e5af1dbdb7!2sFood%20TrAgones!5e0!3m2!1ses-419!2spe!4v1792452928929!5m2!1ses-419!2spe"></iframe>
+          <p>Mapa interactivo: necesita internet. <a href="https://maps.app.goo.gl/qgtEpkYWKE7ZtidRA" target="_blank"
+              rel="noopener noreferrer">Abrir ubicación en Google Maps</a>.</p>
+        </div>
+        <details class="croquis">
+          <summary>Ver croquis del local · disponible sin internet</summary><img src="img/CroquisFoodTruck.svg"
+            alt="Croquis: FoodTragones en avenida teniente Lopez con la Marina, junto a la Iglesia Cristiana">
+          <p>Esquema ilustrativo.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- T07: video MP4 real, local, con controles y poster local. -->
+    <section class="seccion" id="video" aria-labelledby="titulo-video">
+      <div class="contenedor dos-col">
+        <div><span class="ceja">03 / Dale al play</span>
+          <h2 id="titulo-video">El antojo<br>en movimiento.</h2>
+          <p>Un video de referencia para acompañar la carta de FoodTragones y el gusto por una buena hamburguesa.</p>
+          <a class="enlace" href="video/video.mp4">Abrir el MP4 local <i class="fa-solid fa-arrow-right"aria-hidden="true"></i></a>
+        </div>
+        <figure class="video-caja"><video controls poster="img/poster.jpg" preload="metadata" playsinline width="768"
+            height="432" aria-label="Video de referencia de una persona comiendo una hamburguesa">
+            <source src="video/video.mp4" type="video/mp4">Tu navegador no admite video HTML5. <a
+              href="video/video.mp4">Abre el video MP4</a>.
+          </video>
+          <figcaption class="video-pie">Video sin edición y con su marca de agua
+            original. Funciona sin conexión.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <!-- T05 y T07: pie identico con enlaces rapidos y redes de ejemplo -->
+  <footer class="pie">
+    <div class="contenedor footer-grid">
+      <div>
+        <h3 class="marca-footer"><img class="logo-pie" src="img/food-logo.jpg" alt="Logo de FoodTragones" width="500"
+            height="500">FoodTragones</h3>
+        <p>Buen diente. Buena compañía.<br>Hamburguesas, salchipapas y broaster sobre ruedas.</p>
+        <p>Desarrollado por Alexander Cardenas.</p>
+      </div>
+      <div>
+        <h3>Explora el sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ven por tu antojo</h3>
+        <p>C. Teniente Cesar Lopez Rojas 115, Sa Miguel - Lima<br>987 676 192 · hola@foodtragones.example</p>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-facebook-f"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-instagram"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-linkedin-in"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube (sitio de ejemplo, abre otra pestaña)"><i class="fa-brands fa-youtube"
+                aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 FoodTragones · Comida rápida sobre ruedas · Todos los derechos reservados</p>
+  </footer>
+  <!-- T06: fixed permanece visible al desplazarse; enlace local de demostracion -->
+  <a class="flotante" href="contacto.html#whatsapp" aria-label="WhatsApp de ejemplo: leer el aviso de contacto"><i
+      class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
+</body>
+
+</html>
